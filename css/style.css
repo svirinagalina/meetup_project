@@ -981,7 +981,7 @@ input {
   line-height: 20px;
 }
 
-.map__btn span {
+.map__btn > span:not(.expand) {
   position: absolute;
   left: 23.8px;
   top: 8.25px;
@@ -1100,6 +1100,30 @@ input {
   .ev-list {
     width: auto;
     margin-top: 48px;
+  }
+}
+
+/* Промежуточные ширины (≤1240px): How Meetup works и Join Meetup */
+@media (max-width: 1240px) {
+  .how {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .how__card p {
+    width: auto;
+  }
+
+  .join__img {
+    display: block;
+    left: auto;
+    right: 24px;
+    top: 20px;
+    width: 220px;
+    height: 126px;
+  }
+
+  .join__text {
+    max-width: 55%;
   }
 }
 
