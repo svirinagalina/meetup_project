@@ -1763,3 +1763,39 @@ select.filter:focus-visible {
 .ev-row__att b {
   font-weight: 400;
 }
+
+/* Адаптив 480–767px: How Meetup works, Join Meetup, категории и города */
+@media (min-width: 480px) and (max-width: 767px) {
+  .how {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .how__card p {
+    width: auto;
+  }
+
+  .join__img {
+    display: block;
+    left: auto;
+    right: 24px;
+    top: 20px;
+    width: 220px;
+    height: 126px;
+  }
+
+  .join__text {
+    max-width: 55%;
+  }
+
+  .categories {
+    grid-template-columns: repeat(4, 135px);
+    justify-content: center;
+    margin: 23px auto 0;
+  }
+
+  .cities {
+    grid-template-columns: repeat(4, 153px);
+    justify-content: center;
+    margin: -4px auto 0;
+  }
+}
