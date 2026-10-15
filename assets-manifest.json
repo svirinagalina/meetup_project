@@ -1,0 +1,442 @@
+[
+{
+"f": "img/ev-group-cover.webp",
+"u": "e7d358d1-c48d-46d9-a01a-bbec3312ce32.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519345287.webp",
+"u": "de3e4616-e974-4e68-b1f1-1796d82ebecb.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519446442.webp",
+"u": "fa09ec86-272f-4f7e-8812-eed9bf317b25.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519596732.webp",
+"u": "b57a8f19-e41f-4a47-8937-99642bb33eb4.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-518548420.webp",
+"u": "d5f97f42-a292-461d-8216-40d5e2bb1521.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519616239.webp",
+"u": "f91fba0e-c3a2-4c77-8034-d0e28ac53d11.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519189715.webp",
+"u": "ae7baf37-e21a-40f5-89fa-887b810f26f3.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519614558.webp",
+"u": "d7fc2819-8369-4d96-aa3b-1ef1088a54db.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519688853.webp",
+"u": "0f2adf5a-e69a-48a6-b11f-9f70e903afb5.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-272x153.webp",
+"u": "c0427d88-38b2-4998-978a-9044c8c6c753.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-519453986.webp",
+"u": "bb2b7f8b-81db-41ac-9d3b-c2eb36fe1211.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/ev-518832943.webp",
+"u": "7e73d656-93c7-47e9-bf3a-d6dc42528e09.png",
+"w": 544,
+"h": 306
+},
+{
+"f": "img/join.webp",
+"u": "8f0cfa59-fa0a-4344-8d56-ab42dc496242.png",
+"w": 682,
+"h": 392
+},
+{
+"f": "img/city-new-york.webp",
+"u": "599cb9d9-29c7-47fd-9ef8-aefc707cfc6e.png",
+"w": 410,
+"h": 410
+},
+{
+"f": "img/city-san-francisco.webp",
+"u": "17c11f38-9237-4a3a-b3d0-3d1cc358ee5f.png",
+"w": 410,
+"h": 410
+},
+{
+"f": "img/city-chicago.webp",
+"u": "7e4ebaae-2143-46f3-a19a-577774f0be8e.png",
+"w": 410,
+"h": 410
+},
+{
+"f": "img/city-nashville.webp",
+"u": "1f2b143f-fca0-4c4f-8c22-1e5714697f0c.png",
+"w": 410,
+"h": 410
+},
+{
+"f": "img/city-miami.webp",
+"u": "db25522f-2683-474a-87f5-5f86af4458b6.png",
+"w": 410,
+"h": 410
+},
+{
+"f": "img/article-1.webp",
+"u": "03cdd81f-1061-4589-8617-01bf4a7ff4c2.png",
+"w": 752,
+"h": 383
+},
+{
+"f": "img/article-2.webp",
+"u": "a3db2d98-1387-48cf-9678-ddcdf147db8c.png",
+"w": 752,
+"h": 383
+},
+{
+"f": "img/article-3.webp",
+"u": "6e2cff64-127b-4abc-8a37-5e87b00f935b.png",
+"w": 752,
+"h": 383
+},
+{
+"f": "img/ev-518898207.webp",
+"u": "10bf1b8c-944b-4f44-b8c6-b739bdbf8cb7.png",
+"w": 320,
+"h": 180
+},
+{
+"f": "img/ev-519218942.webp",
+"u": "ce73c62c-515e-427d-9c9a-10963f2f1668.png",
+"w": 320,
+"h": 180
+},
+{
+"f": "img/ev-519111663.webp",
+"u": "cfbba801-75c7-4d1f-b628-2620ff281e0e.png",
+"w": 320,
+"h": 180
+},
+{
+"f": "img/ev-519405643.webp",
+"u": "f2593a15-d0ad-4a97-9706-5600177cba24.png",
+"w": 320,
+"h": 180
+},
+{
+"f": "img/ev-519549716.webp",
+"u": "7185e48f-6250-4a35-b1b0-42bcb9494ae1.png",
+"w": 320,
+"h": 256
+},
+{
+"f": "img/ev-519527424.webp",
+"u": "f0b48881-68f6-431a-97e6-ce37b3a62a64.png",
+"w": 320,
+"h": 180
+},
+{
+"f": "img/map.webp",
+"u": "4b18f592-8884-46b2-90db-27650f708031.png",
+"w": 700,
+"h": 570
+},
+{
+"f": "img/logo.svg",
+"u": "243b985f-2dde-4413-b215-c539a6800b23.svg"
+},
+{
+"f": "img/icon-search.svg",
+"u": "a786af9e-b94c-49f7-92bf-24e3d7d750dc.svg"
+},
+{
+"f": "img/icon-search-white.svg",
+"u": "29e8254b-65c1-4668-8176-f13c4ad73f93.svg"
+},
+{
+"f": "img/icon-globe.svg",
+"u": "2512606e-4249-4b76-bee7-9a3dd4a5600f.svg"
+},
+{
+"f": "img/icon-chevron.svg",
+"u": "592d5475-31fa-4313-94bd-c73643aee533.svg"
+},
+{
+"f": "img/icon-calendar.svg",
+"u": "23cac0ba-d2bc-4fe3-9611-9cd0f33c0018.svg"
+},
+{
+"f": "img/icon-people.svg",
+"u": "9c83af77-c490-4b12-94fa-8590f2fdf517.svg"
+},
+{
+"f": "img/icon-ticket.svg",
+"u": "bf5842bd-6531-4657-8788-1b88e089a01a.svg"
+},
+{
+"f": "img/icon-online.svg",
+"u": "7b2ed150-ed8f-4b1e-84d6-e577ff171175.svg"
+},
+{
+"f": "img/cat-travel.svg",
+"u": "c959ef41-9563-4641-9e92-165d5582e8b5.svg"
+},
+{
+"f": "img/cat-social.svg",
+"u": "cf13b408-9672-4b99-825c-3e63c5656b97.svg"
+},
+{
+"f": "img/cat-hobbies.svg",
+"u": "f5af4ae1-fd85-470f-8ab0-108faaeb7515.svg"
+},
+{
+"f": "img/cat-sports.svg",
+"u": "aa7fc75e-94d0-4f05-ab6f-8fa0ff2add1c.svg"
+},
+{
+"f": "img/cat-health.svg",
+"u": "167f8901-16a7-48d2-93c6-b752a6cbb7a7.svg"
+},
+{
+"f": "img/cat-technology.svg",
+"u": "b492b019-90e4-468e-82f4-55e5ff69e7f2.svg"
+},
+{
+"f": "img/cat-art.svg",
+"u": "c53b5f23-f8a0-4007-a41e-c102df225708.svg"
+},
+{
+"f": "img/cat-games.svg",
+"u": "c58fd0d7-dc0f-459b-b0bd-77366babcced.svg"
+},
+{
+"f": "img/how-search.svg",
+"u": "548e6d72-22f7-4033-aca0-2fc043e2f60d.svg"
+},
+{
+"f": "img/how-plus.svg",
+"u": "a883d176-0bae-4dfa-982c-7f357b818adb.svg"
+},
+{
+"f": "img/social-facebook.svg",
+"u": "c622ad53-b76e-4565-b1a8-f737387aff49.svg"
+},
+{
+"f": "img/social-twitter.svg",
+"u": "d1006821-1ecc-47ea-bf42-ebd127b695f8.svg"
+},
+{
+"f": "img/social-youtube.svg",
+"u": "459558e5-e8a5-4a29-8c2e-baf72af8b507.svg"
+},
+{
+"f": "img/social-instagram.svg",
+"u": "9f359354-da7c-4b86-8ad6-655580363b22.svg"
+},
+{
+"f": "img/social-tiktok.svg",
+"u": "454556b9-8ed4-4219-beae-b4fcf0eacaac.svg"
+},
+{
+"f": "img/google-play.svg",
+"u": "2df54dd9-37b5-461f-8177-90b7cc667eee.svg"
+},
+{
+"f": "img/appstore-bg.svg",
+"u": "5ab1fd34-8e4c-4c74-ad6f-348d3f8769f7.svg"
+},
+{
+"f": "img/appstore-apple.svg",
+"u": "5439cf1d-848b-489e-9e67-7ca6a8812b32.svg"
+},
+{
+"f": "img/appstore-text.svg",
+"u": "cb38702d-2039-4fe0-a93d-b962b7bb26f1.svg"
+},
+{
+"f": "img/appstore-small.svg",
+"u": "df27dc80-806c-49ff-a48a-e6b4474ff36e.svg"
+},
+{
+"f": "img/icon-chevron-down.svg",
+"u": "40f5c3f3-a246-40d6-a3be-074317a2d91d.svg"
+},
+{
+"f": "img/icon-close.svg",
+"u": "43578b31-802f-4515-961f-6fb70536e3b5.svg"
+},
+{
+"f": "img/expand-mask.svg",
+"u": "525a9ba6-cc90-4fe6-a264-4377b4da4e89.svg"
+},
+{
+"f": "img/expand-icon.svg",
+"u": "0ad42fda-6f2b-4295-abe2-8130f64c59ad.svg"
+},
+{
+"f": "img/hero/group.svg",
+"u": "21156cd5-22dd-4e5c-8ac2-8e8692334c54.svg"
+},
+{
+"f": "img/hero/group1.svg",
+"u": "66aaa2d3-3e25-4762-ab65-fc91c5275060.svg"
+},
+{
+"f": "img/hero/group2.svg",
+"u": "cc780a80-05ed-40f6-a95b-64f229972532.svg"
+},
+{
+"f": "img/hero/group3.svg",
+"u": "73ef26f7-8c69-4175-b0d3-29f4f78626be.svg"
+},
+{
+"f": "img/hero/vector.svg",
+"u": "c8f363db-1e5a-4fcf-b220-21f88d407b61.svg"
+},
+{
+"f": "img/hero/group4.svg",
+"u": "4dbbcacc-f3c8-443c-8669-f54e905eeb7d.svg"
+},
+{
+"f": "img/hero/vector1.svg",
+"u": "fb65cae5-703d-4492-9b57-81a7ba27c37e.svg"
+},
+{
+"f": "img/hero/vector2.svg",
+"u": "8b7b0815-dc06-4ae5-a96c-2cac935d7cac.svg"
+},
+{
+"f": "img/hero/vector3.svg",
+"u": "fcb67bee-31ad-492c-9ada-1a9ebe4f9e82.svg"
+},
+{
+"f": "img/hero/vector4.svg",
+"u": "903dd36e-f5e6-48e3-a258-1a94f867d4ac.svg"
+},
+{
+"f": "img/hero/group5.svg",
+"u": "f921d530-c131-493d-af70-0b22109cb0b4.svg"
+},
+{
+"f": "img/hero/group6.svg",
+"u": "16c0536b-2f7a-4705-a016-7a6ebb3a2743.svg"
+},
+{
+"f": "img/hero/group7.svg",
+"u": "5f563a18-5899-4c31-96c6-1f6860a2a027.svg"
+},
+{
+"f": "img/hero/vector5.svg",
+"u": "a1d41ef6-64b7-4207-87d9-deae84fd2da8.svg"
+},
+{
+"f": "img/hero/vector6.svg",
+"u": "ff9c2a48-a035-4730-8f10-c4b8a6405a45.svg"
+},
+{
+"f": "img/hero/vector7.svg",
+"u": "d42a78d3-b0eb-4abe-8218-dbefbfa581a6.svg"
+},
+{
+"f": "img/hero/group8.svg",
+"u": "3f13f9ba-dbf9-41b5-932e-fb0bb7845c72.svg"
+},
+{
+"f": "img/hero/group9.svg",
+"u": "6229e4ac-0155-4dee-a2cf-4bdd86d44050.svg"
+},
+{
+"f": "img/hero/vector8.svg",
+"u": "67cf866b-d448-414e-bc3c-482931ebae7e.svg"
+},
+{
+"f": "img/hero/group10.svg",
+"u": "2a2f47f2-578a-4572-beae-125298e2f671.svg"
+},
+{
+"f": "img/hero/vector9.svg",
+"u": "19df83d1-2739-42ec-af73-847a445c45e7.svg"
+},
+{
+"f": "img/hero/group11.svg",
+"u": "55a324ae-f488-476c-b904-6917e5d71782.svg"
+},
+{
+"f": "img/hero/group12.svg",
+"u": "7dd02618-e276-4731-8014-d318507fb29e.svg"
+},
+{
+"f": "img/hero/group13.svg",
+"u": "51f245ad-96e2-4b88-b922-3b2ed68a2f0e.svg"
+},
+{
+"f": "img/hero/vector10.svg",
+"u": "ce52705b-791a-43ea-9661-0faa877688a4.svg"
+},
+{
+"f": "img/hero/vector11.svg",
+"u": "d2cf1f0b-f278-403d-9d26-9cd443c7e214.svg"
+},
+{
+"f": "img/hero/vector12.svg",
+"u": "7629d027-2582-47bf-8cb5-fcdecd2baabb.svg"
+},
+{
+"f": "img/hero/vector13.svg",
+"u": "a8e1a2f1-0f9b-486e-86ae-4d2d050a4593.svg"
+},
+{
+"f": "img/hero/vector14.svg",
+"u": "94179302-9448-4e00-a8f7-bc695299f136.svg"
+},
+{
+"f": "img/hero/vector15.svg",
+"u": "989f2774-99f5-4a7a-9b79-4b7736c2fddc.svg"
+},
+{
+"f": "img/hero/vector16.svg",
+"u": "10e8ccd0-96fd-4edb-a133-d42052327a72.svg"
+},
+{
+"f": "img/hero/group14.svg",
+"u": "d11ccb75-47cb-4e2d-a69c-5adc1d0dc8cd.svg"
+},
+{
+"f": "img/hero/group15.svg",
+"u": "f853421b-4300-4107-a722-7c329009dbeb.svg"
+},
+{
+"f": "img/hero/vector17.svg",
+"u": "433c57ac-3234-475a-b7d8-2db04c040469.svg"
+},
+{
+"f": "img/hero/vector18.svg",
+"u": "b1e230fb-7356-4ed0-bc78-e0ecc78fd250.svg"
+}
+]
