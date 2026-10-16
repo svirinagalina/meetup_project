@@ -1148,31 +1148,7 @@ input {
     display: none;
   }
 }
-@media (max-width: 1511px) {
-  .ev-page {
-    width: auto;
-    height: auto;
-    padding: 77px 24px 0;
-    display: flex;
-    gap: 48px;
-  }
 
-  .ev-head,
-  .ev-list,
-  .ev-side {
-    position: static;
-  }
-
-  .ev-main {
-    flex: 1;
-    max-width: 604px;
-  }
-
-  .ev-list {
-    width: auto;
-    margin-top: 48px;
-  }
-}
 /* ===== Mobile (iPhone 14 / 15 Pro, 393px) ===== */
 @media (max-width: 767px) {
   .desktop-only {
@@ -1821,5 +1797,47 @@ select.filter:focus-visible {
     grid-template-columns: repeat(4, 153px);
     justify-content: center;
     margin: -4px auto 0;
+  }
+}
+@media (min-width: 1241px) {
+  .ev-page {
+    position: relative;
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+    height: auto;
+    padding-top: 81px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    column-gap: 64px;
+    align-items: start;
+  }
+
+  .ev-head,
+  .ev-list,
+  .ev-side,
+  .ev-empty {
+    position: static;
+  }
+
+  .ev-head {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .ev-list {
+    grid-column: 1;
+    grid-row: 2;
+    width: auto;
+    margin-top: 24px;
+  }
+
+  .ev-side {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 350px;
+  }
+
+  .ev-empty {
+    margin-top: 24px;
   }
 }
