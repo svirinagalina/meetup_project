@@ -1148,7 +1148,31 @@ input {
     display: none;
   }
 }
+@media (max-width: 1511px) {
+  .ev-page {
+    width: auto;
+    height: auto;
+    padding: 77px 24px 0;
+    display: flex;
+    gap: 48px;
+  }
 
+  .ev-head,
+  .ev-list,
+  .ev-side {
+    position: static;
+  }
+
+  .ev-main {
+    flex: 1;
+    max-width: 604px;
+  }
+
+  .ev-list {
+    width: auto;
+    margin-top: 48px;
+  }
+}
 /* ===== Mobile (iPhone 14 / 15 Pro, 393px) ===== */
 @media (max-width: 767px) {
   .desktop-only {
