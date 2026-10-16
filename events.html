@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -81,8 +82,9 @@
     <aside class="ev-side">
       <small>Find events near</small>
       <strong>New York, NY</strong>
-      <div class="map">
+      <div class="map" id="map-box">
         <img src="img/map.webp" alt="Map of New York">
+        <div class="map__canvas" id="map"></div>
         <button class="map__close" type="button" aria-label="Close map"><img src="img/icon-close.svg" alt=""></button>
         <button class="map__btn" type="button">
           <span>Browse in map</span>
@@ -164,6 +166,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="js/events.js"></script>
 </body>
 </html>

@@ -9,6 +9,8 @@ const eventsStore = [
     attendees: 99,
     category: "Hobbies and Passions",
     distance: 50,
+    lat: 41.0534,
+    lng: -73.5387,
   },
   {
     title: "NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and Customer Experience",
@@ -20,6 +22,8 @@ const eventsStore = [
     spotsLeft: 2,
     category: "Technology",
     distance: 25,
+    lat: 40.9312,
+    lng: -73.8988,
   },
   {
     title: "Book 40+ Appointments Per Month Using AI and Automation",
@@ -59,6 +63,8 @@ const eventsStore = [
     type: "offline",
     category: "Health and Wellbeing",
     distance: 15,
+    lat: 40.7675,
+    lng: -73.8331,
   },
 ];
 
@@ -195,11 +201,106 @@ function matches(ev) {
   return true;
 }
 
+// ---- Map (Leaflet + OpenStreetMap) ----
+// Collapsed: a static preview. "Browse in map" opens it full screen and interactive.
+const NEW_YORK = [40.7128, -74.006];
+const mapBox = document.getElementById("map-box");
+const mapBtn = mapBox.querySelector(".map__btn");
+const mapClose = mapBox.querySelector(".map__close");
+let map = null;
+let markers = null;
+
+if (window.L) {
+  map = L.map("map", {
+    center: NEW_YORK,
+    zoom: 9,
+    zoomControl: false,
+    attributionControl: false,
+  });
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+  markers = L.featureGroup().addTo(map);
+  L.control.attribution({ prefix: false }).addTo(map);
+  setMapInteractive(false);
+  mapBox.classList.add("map--live");
+}
+
+function setMapInteractive(on) {
+  const handlers = [map.dragging, map.touchZoom, map.doubleClickZoom, map.scrollWheelZoom, map.boxZoom, map.keyboard];
+  handlers.forEach((h) => (on ? h.enable() : h.disable()));
+}
+
+function popupContent(ev) {
+  const box = el("div", "map-popup");
+  box.appendChild(el("p", "map-popup__date", formatDate(ev.date)));
+  box.appendChild(el("p", "map-popup__title", ev.title));
+  box.appendChild(el("p", "map-popup__cat", categoryText(ev)));
+  return box;
+}
+
+// Only offline events have a place on the map
+function updateMarkers(items) {
+  if (!map) return;
+  markers.clearLayers();
+  items.filter((ev) => ev.lat !== undefined).forEach((ev) => {
+    L.circleMarker([ev.lat, ev.lng], {
+      radius: 9,
+      color: "#fff",
+      weight: 2,
+      fillColor: "#00798a",
+      fillOpacity: 1,
+    }).bindPopup(popupContent(ev)).addTo(markers);
+  });
+  if (markers.getLayers().length) {
+    map.fitBounds(markers.getBounds(), { padding: [40, 40], maxZoom: 13 });
+  } else {
+    map.setView(NEW_YORK, 9);
+  }
+}
+
+let zoomControl = null;
+
+function openMap() {
+  if (!map || mapBox.classList.contains("map--open")) return;
+  mapBox.classList.add("map--open");
+  document.body.classList.add("map-opened");
+  setMapInteractive(true);
+  zoomControl = L.control.zoom({ position: "bottomright" }).addTo(map);
+  map.invalidateSize();
+  updateMarkers(eventsStore.filter(matches));
+}
+
+function closeMap() {
+  mapBox.classList.remove("map--open");
+  document.body.classList.remove("map-opened");
+  map.closePopup();
+  setMapInteractive(false);
+  if (zoomControl) zoomControl.remove();
+  map.invalidateSize();
+  updateMarkers(eventsStore.filter(matches));
+}
+
+mapBtn.addEventListener("click", openMap);
+mapBox.addEventListener("click", (e) => {
+  if (!mapBox.classList.contains("map--open") && e.target.closest("#map")) openMap();
+});
+mapClose.addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (mapBox.classList.contains("map--open")) closeMap();
+  else mapBox.hidden = true;
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && mapBox.classList.contains("map--open")) closeMap();
+});
+
 function render() {
   const items = eventsStore.filter(matches);
   listDesktop.replaceChildren(...items.map(desktopRow));
   listMobile.replaceChildren(...items.map(mobileRow));
   emptyMsg.hidden = items.length > 0;
+  updateMarkers(items);
 }
 
 form.addEventListener("change", render);

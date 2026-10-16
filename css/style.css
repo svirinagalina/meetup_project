@@ -949,7 +949,80 @@ input {
   object-fit: cover;
 }
 
+/* Живая карта (Leaflet) поверх картинки-заглушки */
+.map__canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.map--live .map__canvas {
+  cursor: pointer;
+}
+
+.map--open {
+  position: fixed;
+  inset: 24px;
+  z-index: 1000;
+  width: auto;
+  height: auto;
+  margin: 0;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+}
+
+.map--open .map__canvas {
+  cursor: grab;
+}
+
+.map--open .map__btn {
+  display: none;
+}
+
+.map--open .map__close {
+  right: 16px;
+  top: 16px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.map-opened {
+  overflow: hidden;
+}
+
+.map-popup__date {
+  color: #7c6f50;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.map-popup__title {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map-popup__cat {
+  margin-top: 2px;
+  color: #707070;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+}
+
 .map__close {
+  z-index: 1;
   position: absolute;
   right: 15px;
   top: 11px;
@@ -967,6 +1040,7 @@ input {
 }
 
 .map__btn {
+  z-index: 1;
   position: absolute;
   left: 89px;
   top: 109px;
