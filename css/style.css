@@ -1802,14 +1802,14 @@ select.filter:focus-visible {
 @media (min-width: 1241px) {
   .ev-page {
     position: relative;
-    width: min(1120px, calc(100% - 48px));
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1512px;
     height: auto;
-    padding-top: 81px;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 350px;
-    column-gap: 64px;
-    align-items: start;
+    margin: 0 auto;
+    padding: 81px min(133px, 8.8vw) 0 min(158px, 10.45vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .ev-head,
@@ -1819,25 +1819,18 @@ select.filter:focus-visible {
     position: static;
   }
 
-  .ev-head {
-    grid-column: 1;
-    grid-row: 1;
+  .ev-main {
+    flex: none;
+    width: 604px;
   }
 
   .ev-list {
-    grid-column: 1;
-    grid-row: 2;
-    width: auto;
-    margin-top: 24px;
+    width: 604px;
+    margin-top: 56px;
   }
 
   .ev-side {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    flex: none;
     width: 350px;
-  }
-
-  .ev-empty {
-    margin-top: 24px;
   }
 }
