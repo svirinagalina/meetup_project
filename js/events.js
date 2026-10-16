@@ -93,9 +93,9 @@ function categoryText(ev) {
   return ev.type === "offline" ? ev.category + " (" + ev.distance + " km)" : ev.category;
 }
 
-function attendeesLine(ev) {
+function attendeesLine(ev, className) {
   if (ev.attendees === undefined) return null;
-  const p = el("p", "ev-row__att");
+  const p = el("p", className || "ev-row__att");
   p.textContent = ev.attendees + " attendees";
   if (ev.spotsLeft) {
     p.appendChild(document.createTextNode(" "));
@@ -128,9 +128,11 @@ function desktopRow(ev) {
   a.appendChild(img);
 
   const body = el("div", "ev-row__body");
-  body.appendChild(el("p", "ev-row__date", formatDate(ev.date)));
-  body.appendChild(el("h2", "ev-row__title", ev.title));
-  body.appendChild(el("p", "ev-row__cat", categoryText(ev)));
+  const info = el("div", "ev-row__info");
+  info.appendChild(el("p", "ev-row__date", formatDate(ev.date)));
+  info.appendChild(el("h2", "ev-row__title", ev.title));
+  info.appendChild(el("p", "ev-row__cat", categoryText(ev)));
+  body.appendChild(info);
   const att = attendeesLine(ev);
   if (att) body.appendChild(att);
   a.appendChild(body);
@@ -161,6 +163,8 @@ function mobileRow(ev) {
     body.appendChild(badge);
   }
   a.appendChild(body);
+  const att = attendeesLine(ev, "m-row__att");
+  if (att) a.appendChild(att);
   return a;
 }
 

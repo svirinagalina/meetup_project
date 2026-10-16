@@ -997,7 +997,7 @@ input {
 }
 
 .footer--events {
-  margin-top: 0;
+  margin-top: 85px;
 }
 
 /* ===== Tablet ===== */
@@ -1521,7 +1521,8 @@ input {
   }
 
   .how {
-    grid-template-columns: 360.89px;
+    grid-template-columns: minmax(0, 360.89px);
+    margin-right: 16px;
     row-gap: 12px;
     margin: 18px 0 0 25px;
   }
@@ -1549,7 +1550,8 @@ input {
   }
 
   .how__card p {
-    width: 235.82px;
+    width: auto;
+    max-width: 235.82px;
     margin-top: 10px;
     font-size: 10px;
     line-height: 14.93px;
@@ -1715,6 +1717,51 @@ input {
   }
 }
 
+/* Узкие телефоны (<393px): футер не вылезает за экран */
+@media (max-width: 392px) {
+  .footer__top {
+    right: 18px;
+    width: auto;
+  }
+
+  .footer__top p {
+    max-width: calc(100% - 130px);
+    margin-top: 0;
+    white-space: normal;
+  }
+
+  .footer__start {
+    left: auto;
+    right: 0;
+  }
+
+  .footer__cols {
+    right: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .categories {
+    grid-template-columns: repeat(2, minmax(0, 135px));
+    margin-right: 16px;
+  }
+
+  .cities {
+    grid-template-columns: repeat(2, minmax(0, 153px));
+    margin-right: 16px;
+  }
+
+  .city {
+    width: auto;
+    height: auto;
+  }
+
+  .city img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
 /* ---- Events page: JS-rendered list and functional filters ---- */
 select.filter {
   -webkit-appearance: none;
@@ -1753,7 +1800,39 @@ select.filter:focus-visible {
 
 .ev-row__att {
   position: static;
-  margin-top: 8px;
+  margin-top: 19px;
+}
+
+/* Высота текстового блока как у картинки (по макету) */
+.ev-row__info {
+  min-height: 105px;
+}
+
+.ev-row__info:last-child {
+  padding-bottom: 24px;
+}
+
+/* Мобильный список событий: строки по макету, длинные названия переносятся */
+@media (max-width: 767px) {
+  #ev-list-mobile .m-row {
+    min-height: 113px;
+    padding-bottom: 12px;
+  }
+
+  #ev-list-mobile .m-row__title {
+    height: auto;
+    padding-bottom: 2.45px;
+  }
+
+  #ev-list-mobile .m-row__att {
+    position: static;
+    margin: 6px 0 0 104.87px;
+  }
+
+  #ev-list-mobile .m-row__att b {
+    font-weight: 400;
+    color: #e32359;
+  }
 }
 
 .ev-row__att span {
@@ -1788,15 +1867,19 @@ select.filter:focus-visible {
   }
 
   .categories {
-    grid-template-columns: repeat(4, 135px);
+    grid-template-columns: repeat(auto-fill, 135px);
     justify-content: center;
-    margin: 23px auto 0;
+    margin: 23px 24px 0;
   }
 
   .cities {
-    grid-template-columns: repeat(4, 153px);
+    grid-template-columns: repeat(auto-fill, 153px);
     justify-content: center;
-    margin: -4px auto 0;
+    margin: -4px 24px 0;
+  }
+
+  .how {
+    margin-right: 24px;
   }
 }
 @media (min-width: 1241px) {
