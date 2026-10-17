@@ -53,7 +53,7 @@ const eventsStore = [
     type: "online",
     attendees: 140,
     category: "Social Activities",
-    distance: 74,
+    distance: 75,
   },
   {
     title: "All Nations - Manhattan Missions Church Bible Study",
